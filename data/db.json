@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "fbcf",
+      "username": "John.x.Doe",
+      "age": 32,
+      "favourite_music_genre": "Jazz",
+      "preferred_programming_language": "Javascript",
+      "best_frontend_framework": "Vue"
+    },
+    {
+      "id": "48e9",
+      "username": "Dragon",
+      "age": 55,
+      "favourite_music_genre": "Jazz",
+      "preferred_programming_language": "Python",
+      "best_frontend_framework": "Angular"
+    },
+    {
+      "id": "5f98",
+      "username": "Ali",
+      "age": 27,
+      "favourite_music_genre": "None",
+      "preferred_programming_language": "JavaScript",
+      "best_frontend_framework": "React.js"
+    }
+  ],
+  "polls": [
+    {
+      "question": "Favourite Music Genre?",
+      "options": [
+        "Rock",
+        "Pop",
+        "Country",
+        "Rap",
+        "Jazz",
+        "Hip Hop",
+        "RNB",
+        "None",
+        "Depends"
+      ],
+      "id": "3d0b"
+    },
+    {
+      "question": "Preferred Programming Language?",
+      "options": [
+        "Java",
+        "C",
+        "C++",
+        "C#",
+        "Javascript",
+        "Python",
+        "Kotlin"
+      ],
+      "id": "9e75"
+    },
+    {
+      "question": "Better Frontend JS Framework?",
+      "options": [
+        "React",
+        "Vue",
+        "Angular"
+      ],
+      "id": "a3f5"
+    }
+  ]
+}
