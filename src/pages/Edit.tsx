@@ -6,11 +6,11 @@ import { updateUser } from "../store/userSlice";
 const Edit = () => {
   const { userID } = useParams();
   const [user, setUser] = useState({
-    username: "",
-    age: 0,
-    favourite_music_genre: "",
-    preferred_programming_language: "",
-    best_frontend_framework: "",
+    // username: "",
+    // age: 0,
+    // favourite_music_genre: "",
+    // preferred_programming_language: "",
+    // best_frontend_framework: "",
   });
 
   const dispatch = useDispatch();

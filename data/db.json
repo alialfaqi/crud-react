@@ -1,14 +1,6 @@
 {
   "users": [
     {
-      "id": "fbcf",
-      "username": "John.x.Doe",
-      "age": 32,
-      "favourite_music_genre": "Jazz",
-      "preferred_programming_language": "Javascript",
-      "best_frontend_framework": "Vue"
-    },
-    {
       "id": "48e9",
       "username": "Dragon",
       "age": 55,
@@ -19,10 +11,18 @@
     {
       "id": "5f98",
       "username": "Ali",
-      "age": 27,
+      "age": 28,
       "favourite_music_genre": "None",
       "preferred_programming_language": "JavaScript",
       "best_frontend_framework": "React.js"
+    },
+    {
+      "id": "5b52",
+      "username": "Ali ",
+      "age": 88,
+      "favourite_music_genre": "Classics",
+      "preferred_programming_language": "C",
+      "best_frontend_framework": "React"
     }
   ],
   "polls": [

@@ -3,16 +3,31 @@ import { useDispatch, useSelector } from "react-redux";
 import { getUsers } from "../store/userSlice";
 import Table from "../components/Table";
 import { Link } from "react-router-dom";
-import Create from "./Create";
+import { useQuery, useQueryClient } from "react-query";
 
 const Home = () => {
   const { data, loading } = useSelector((state) => state.user);
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(getUsers());
-  }, [data]);
+  // useEffect(() => {
+  //   dispatch(getUsers());
+  // }, [data]);
+
+  const queryClient = useQueryClient();
+  // Fetch users data when the component mounts or when the data cache is invalidated
+  useQuery(
+    "users",
+    async () => {
+      await dispatch(getUsers()); // Dispatch the Redux action created with createAsyncThunk
+    },
+    {
+      // Invalidate and refetch data when the 'users' query changes
+      onSuccess: () => {
+        queryClient.invalidateQueries("users");
+      },
+    }
+  );
 
   return (
     <>
