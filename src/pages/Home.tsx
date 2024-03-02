@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getUsers } from "../store/userSlice";
 import Table from "../components/Table";
@@ -6,9 +5,9 @@ import { Link } from "react-router-dom";
 import { useQuery, useQueryClient } from "react-query";
 
 const Home = () => {
-  const { data, loading } = useSelector((state) => state.user);
+  const { data } = useSelector((state: any) => state.user);
 
-  const dispatch = useDispatch();
+  const dispatch: any = useDispatch();
 
   // useEffect(() => {
   //   dispatch(getUsers());

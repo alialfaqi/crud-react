@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { SyntheticEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { updateUser } from "../store/userSlice";
 
 const Edit = () => {
-  const { userID } = useParams();
+  const { userID = "" } = useParams();
   const [user, setUser] = useState({
     // username: "",
     // age: 0,
@@ -13,10 +13,10 @@ const Edit = () => {
     // best_frontend_framework: "",
   });
 
-  const dispatch = useDispatch();
+  const dispatch: any = useDispatch();
   const navigate = useNavigate();
 
-  const submitFormData = (e) => {
+  const submitFormData = (e: SyntheticEvent) => {
     e.preventDefault();
     dispatch(updateUser({ userID, updatedData: user }));
     navigate("/");
