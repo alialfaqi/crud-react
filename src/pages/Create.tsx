@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { SyntheticEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 import { createUser } from "../store/userSlice";
 import { useNavigate } from "react-router-dom";
@@ -12,10 +12,10 @@ const Create = () => {
     best_frontend_framework: "",
   });
 
-  const dispatch = useDispatch();
+  const dispatch: any = useDispatch();
   const navigate = useNavigate();
 
-  const submitFormData = (e) => {
+  const submitFormData = (e: SyntheticEvent) => {
     e.preventDefault();
     dispatch(createUser(user));
     navigate("/");

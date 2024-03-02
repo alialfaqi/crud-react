@@ -11,10 +11,10 @@ const axiosInstance = axios.create({
 
 const API = {
   getUsers: () => axiosInstance.get("/users"),
-  createUser: (userData) => axiosInstance.post("/users", userData),
-  updateUser: (userID, updatedData) =>
+  createUser: (userData: object) => axiosInstance.post("/users", userData),
+  updateUser: (userID: string, updatedData: object) =>
     axiosInstance.patch(`/users/${userID}`, updatedData),
-  deleteUser: (userID) => axiosInstance.delete(`/users/${userID}`),
+  deleteUser: (userID: string) => axiosInstance.delete(`/users/${userID}`),
 };
 
 export default API;

@@ -17,12 +17,12 @@
       "best_frontend_framework": "React.js"
     },
     {
-      "id": "5b52",
-      "username": "Ali ",
-      "age": 88,
-      "favourite_music_genre": "Classics",
-      "preferred_programming_language": "C",
-      "best_frontend_framework": "React"
+      "id": "d37b",
+      "username": "Draong",
+      "age": 0,
+      "favourite_music_genre": "",
+      "preferred_programming_language": "",
+      "best_frontend_framework": ""
     }
   ],
   "polls": [
